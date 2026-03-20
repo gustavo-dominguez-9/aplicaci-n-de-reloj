@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.hora = New System.Windows.Forms.Label()
-        Me.segundo = New System.Windows.Forms.Label()
+        Me.minutos = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dia = New System.Windows.Forms.Label()
         Me.fecha = New System.Windows.Forms.Label()
@@ -33,9 +33,11 @@ Partial Class Form1
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.conf = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.segundos = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,18 +55,18 @@ Partial Class Form1
         Me.hora.TabIndex = 0
         Me.hora.Text = "00"
         '
-        'segundo
+        'minutos
         '
-        Me.segundo.AccessibleDescription = "group"
-        Me.segundo.AccessibleName = "group"
-        Me.segundo.AutoSize = True
-        Me.segundo.Font = New System.Drawing.Font("Proxy 9", 90.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.segundo.ForeColor = System.Drawing.Color.Lime
-        Me.segundo.Location = New System.Drawing.Point(394, 65)
-        Me.segundo.Name = "segundo"
-        Me.segundo.Size = New System.Drawing.Size(208, 146)
-        Me.segundo.TabIndex = 1
-        Me.segundo.Text = "00"
+        Me.minutos.AccessibleDescription = "group"
+        Me.minutos.AccessibleName = "group"
+        Me.minutos.AutoSize = True
+        Me.minutos.Font = New System.Drawing.Font("Proxy 9", 90.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.minutos.ForeColor = System.Drawing.Color.Lime
+        Me.minutos.Location = New System.Drawing.Point(394, 65)
+        Me.minutos.Name = "minutos"
+        Me.minutos.Size = New System.Drawing.Size(208, 146)
+        Me.minutos.TabIndex = 1
+        Me.minutos.Text = "00"
         '
         'Label3
         '
@@ -134,34 +136,38 @@ Partial Class Form1
         '
         'panel1
         '
-        Me.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.panel1.Controls.Add(Me.ComboBox1)
         Me.panel1.Controls.Add(Me.conf)
         Me.panel1.Controls.Add(Me.Button2)
-        Me.panel1.Location = New System.Drawing.Point(25, 12)
+        Me.panel1.Location = New System.Drawing.Point(12, 18)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(243, 286)
+        Me.panel1.Size = New System.Drawing.Size(692, 332)
         Me.panel1.TabIndex = 7
         Me.panel1.Visible = False
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(16, 79)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 56)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'conf
         '
         Me.conf.AutoSize = True
-        Me.conf.BackColor = System.Drawing.SystemColors.Control
-        Me.conf.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.conf.Location = New System.Drawing.Point(45, 17)
+        Me.conf.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.conf.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.conf.ForeColor = System.Drawing.Color.Lime
+        Me.conf.Location = New System.Drawing.Point(151, 7)
         Me.conf.Name = "conf"
-        Me.conf.Size = New System.Drawing.Size(144, 24)
+        Me.conf.Size = New System.Drawing.Size(376, 55)
         Me.conf.TabIndex = 4
         Me.conf.Text = "configuraciones"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.ForeColor = System.Drawing.Color.Lime
+        Me.Button2.Location = New System.Drawing.Point(16, 79)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(90, 56)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -173,6 +179,28 @@ Partial Class Form1
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "⚙"
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Blanco", "Rojo", "Azul", "Amarillo", "Verde"})
+        Me.ComboBox1.Location = New System.Drawing.Point(23, 141)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 5
+        '
+        'segundos
+        '
+        Me.segundos.AccessibleDescription = "group"
+        Me.segundos.AccessibleName = "group"
+        Me.segundos.Font = New System.Drawing.Font("Proxy 9", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.segundos.ForeColor = System.Drawing.Color.Lime
+        Me.segundos.Location = New System.Drawing.Point(577, 9)
+        Me.segundos.Name = "segundos"
+        Me.segundos.Size = New System.Drawing.Size(118, 69)
+        Me.segundos.TabIndex = 9
+        Me.segundos.Text = "00"
         '
         'Form1
         '
@@ -187,8 +215,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.fecha)
         Me.Controls.Add(Me.dia)
-        Me.Controls.Add(Me.segundo)
+        Me.Controls.Add(Me.minutos)
         Me.Controls.Add(Me.hora)
+        Me.Controls.Add(Me.segundos)
         Me.Name = "Form1"
         Me.Text = "reloj digital"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -200,7 +229,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents hora As Label
-    Friend WithEvents segundo As Label
+    Friend WithEvents minutos As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents dia As Label
     Friend WithEvents fecha As Label
@@ -212,4 +241,6 @@ Partial Class Form1
     Friend WithEvents conf As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents segundos As Label
 End Class
