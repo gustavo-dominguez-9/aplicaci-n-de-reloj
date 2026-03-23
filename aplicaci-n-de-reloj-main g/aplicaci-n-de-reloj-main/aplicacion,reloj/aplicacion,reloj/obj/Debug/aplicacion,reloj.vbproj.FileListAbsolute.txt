@@ -1,0 +1,24 @@
+D:\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.exe.config
+D:\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.exe
+D:\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.pdb
+D:\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.xml
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbprojAssemblyReference.cache
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion_reloj.Form1.resources
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion_reloj.Resources.resources
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbproj.GenerateResource.cache
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbproj.CoreCompileInputs.cache
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.exe
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.xml
+D:\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.pdb
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.exe.config
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.exe
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.pdb
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\bin\Debug\aplicacion,reloj.xml
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbprojAssemblyReference.cache
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion_reloj.Form1.resources
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion_reloj.Resources.resources
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbproj.GenerateResource.cache
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.vbproj.CoreCompileInputs.cache
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.exe
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.xml
+C:\Users\win512\Downloads\aplicaci-n-de-reloj-main g\aplicaci-n-de-reloj-main\aplicacion,reloj\aplicacion,reloj\obj\Debug\aplicacion,reloj.pdb
