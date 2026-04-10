@@ -22,6 +22,11 @@ aplicacion,reloj
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:aplicacion_reloj.My.Resources.Resources._10466199">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:aplicacion_reloj.My.Resources.Resources.aaya_jpg">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

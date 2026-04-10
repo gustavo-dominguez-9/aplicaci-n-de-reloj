@@ -294,22 +294,29 @@
             start.Text = "Stop"
             startTime = DateTime.Now
         ElseIf boton_start = True Then
-        Timer3.Enabled = False
-        boton_start = False
+            Timer3.Enabled = False
+            boton_start = False
             start.Text = "Start"
-            elapsede += DateTime.Now - startTime
+            elapsed += DateTime.Now - startTime
         End If
+
+
     End Sub
 
     Private Sub reset_Click(sender As Object, e As EventArgs) Handles reset.Click
-        tiempo_crono = 0
+
+        elapsed = TimeSpan.Zero
         Timer3.Enabled = False
-        tiempo.Text = "00"
+        tiempo.Text = "00:00:00.00"
+        boton_start = False
+        start.Text = "start"
+
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        tiempo_crono = tiempo_crono + 1
-        tiempo.Text = tiempo_crono.ToString()
+
+        Dim current = elapsed + (DateTime.Now - startTime)
+        tiempo.Text = current.ToString("hh\:mm\:ss\.ff")
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -328,5 +335,41 @@
             Panel2.Visible = False
 
         End If
+    End Sub
+
+    Private Sub tiempo_Click(sender As Object, e As EventArgs) Handles tiempo.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        If Panel3.Visible = False Then
+            Panel3.Visible = True
+        ElseIf Panel3.Visible = True Then
+            Panel3.Visible = False
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If Panel3.Visible = False Then
+            Panel3.Visible = True
+        ElseIf Panel3.Visible = True Then
+            Panel3.Visible = False
+        End If
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
     End Sub
 End Class
