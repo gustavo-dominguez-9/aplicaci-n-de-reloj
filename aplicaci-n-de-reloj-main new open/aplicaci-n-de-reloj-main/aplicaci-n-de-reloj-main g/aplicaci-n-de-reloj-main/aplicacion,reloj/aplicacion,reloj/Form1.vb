@@ -319,6 +319,13 @@
         tiempo.Text = current.ToString("hh\:mm\:ss\.ff")
     End Sub
 
+
+    'codigo del temporizador
+
+    Private tiempoRestante As TimeSpan = TimeSpan
+    Private temporizadorActivo As Boolean = False
+
+
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         If Panel2.Visible = False Then
             Panel2.Visible = True
@@ -370,6 +377,41 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        'start
+        If tiempoRestante = TimeSpan.Zero Then
+            MessageBoxButtons.OK, MessageBoxIcon, warning
+                Exit Sub
+        End If
+        If temporizadorActivo = False Then
+            Timer4.Enabled = True
+            temporizadorActivo = True
+            Button6.Text = "stop"
+        Else
+            Timer4.Enabled = False
+            temporizadorActivo = False
+            Button6.Text = "start"
+        End If
+    End Sub
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        'mas 1 min 
+
+        tiempoRestante = tiempoRestante.Add(TimeSpan.FromMinutes(1))
+        Label4.Text = tiempoRestante.ToString("m\:ss")
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        'mas 5 min 
+
+        tiempoRestante = tiempoRestante.Add(TimeSpan.FromMinutes(5))
+        Label4.Text = tiempoRestante.ToString("m\:ss")
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Timer4.Enabled = False
+        tiempoRestante = TimeSpan.Zero
+        temporizadorActivo = False
+        Label4.Text = "00:00"
+        Button6.Text = "Start"
     End Sub
 End Class

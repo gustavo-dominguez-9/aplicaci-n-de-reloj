@@ -49,10 +49,13 @@ Partial Class Form1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -328,6 +331,8 @@ Partial Class Form1
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.Button9)
+        Me.Panel3.Controls.Add(Me.Button8)
         Me.Panel3.Controls.Add(Me.Button7)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.Button6)
@@ -338,17 +343,27 @@ Partial Class Form1
         Me.Panel3.TabIndex = 15
         Me.Panel3.Visible = False
         '
-        'Label2
+        'Button8
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Lime
-        Me.Label2.Location = New System.Drawing.Point(189, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(333, 55)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Temporizador"
+        Me.Button8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button8.ForeColor = System.Drawing.Color.Lime
+        Me.Button8.Location = New System.Drawing.Point(168, 252)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(90, 56)
+        Me.Button8.TabIndex = 17
+        Me.Button8.Text = "1 min"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button7.ForeColor = System.Drawing.Color.Lime
+        Me.Button7.Location = New System.Drawing.Point(60, 252)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(90, 56)
+        Me.Button7.TabIndex = 16
+        Me.Button7.Text = "5 min"
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -374,16 +389,28 @@ Partial Class Form1
         Me.Button6.Text = "Start"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Button7
+        'Label2
         '
-        Me.Button7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button7.ForeColor = System.Drawing.Color.Lime
-        Me.Button7.Location = New System.Drawing.Point(60, 252)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(90, 56)
-        Me.Button7.TabIndex = 16
-        Me.Button7.Text = "5 min"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Lime
+        Me.Label2.Location = New System.Drawing.Point(189, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(333, 55)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Temporizador"
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button9.ForeColor = System.Drawing.Color.Lime
+        Me.Button9.Location = New System.Drawing.Point(432, 252)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(90, 56)
+        Me.Button9.TabIndex = 18
+        Me.Button9.Text = "Reset"
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -453,4 +480,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Timer4 As Timer
+    Friend WithEvents Button9 As Button
 End Class
